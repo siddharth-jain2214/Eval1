@@ -38,6 +38,7 @@ html {
   
 body {
     background: var(--white);
+    height: 2000px;
   }
 
 .container {
@@ -92,6 +93,12 @@ li {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
 }
 
 .header-rest ul, .header-rest li,.header-rest a {
