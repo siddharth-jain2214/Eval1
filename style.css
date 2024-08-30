@@ -18,25 +18,116 @@
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
     --opal: hsl(180, 20%, 62%);
-  
+
     /* fs */
   
     --Font1: "Nunito Sans", sans-serif;
     --Font2: "Poppins", sans-serif;
-
+}
     /* Reset */
 
-  *, *::before, *::after {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  html {
+html {
     font-family: var(--Font1);
     scroll-behavior: smooth;
   }
   
-  body {
+body {
     background: var(--white);
   }
-  
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--blue);
+  height: 50px;
+  align-items: center;
+}
+.container a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 900;
+}
+.container a:hover {
+  color: var(--orange);
+}
+ion-icon {
+  color: var(--orange);
+}
+.header-top-heading {
+  display: flex;
+  margin-right: 200px;
+    color: var(--white);
+}
+.header-top-link {
+  display: flex;
+  padding-left: 100px;
+}
+
+.header-top-list{
+  display: flex;
+}
+
+.header-top-social-list {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrapper {
+  margin-right: 300px;
+}
+/* Main navbar starts */
+.header-rest {
+  height: 100px;
+  background-color: var(--black);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.header-rest ul, .header-rest li,.header-rest a {
+  display: flex;
+  color: var(--white);
+  text-decoration: none;
+  padding-left: 20px;
+  font-weight: 900;
+}
+.header-rest a:hover {
+  color: var(--orange);
+}
+.header_logo_cap {
+  font-size: 25px;
+  color: white;
+  font-weight: 900; 
+  position: absolute;
+  top: 80px;
+}
+
+.header_btn {
+  width: 70px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-family: var(--Font1);
+  background-color: var(--orange);
+  color: var(--black2);
+  margin-right: 100px;
+  transition: all;
+  transition-delay: 0.1s;
+}
+
+.header_btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  cursor: pointer;
+}
