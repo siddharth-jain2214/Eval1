@@ -521,3 +521,53 @@ background-color: hsl(0, 0%, 93%);
 border-bottom: 3px solid black;
 transition: 0.14s ease-in-out;
 }
+
+/*Contact Us*/
+
+.contact{
+  background-color: hsl(0, 0%, 93%);
+  padding: 100px;
+  }
+  
+  .row{
+  margin-top: 60px;
+  }
+  
+  .contact-heading{
+  text-align: center;
+  }
+  .contact .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  }
+  
+  .contact-details p{
+  margin-bottom: 20px;
+  }
+  .form{
+  margin-left: 20px;
+  }
+  
+  .contact form input {
+  height: 45px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 80%;
+  font-size: 16px;
+  outline: none;
+  border: 3px solid var(--blue);
+  font-family: var(--Font2);
+  }
+  
+  .contact form textarea {
+  padding: 10px;
+  width: 80%;
+  font-size: 16px;
+  height: 150px;
+  outline: none;
+  resize: vertical;
+  border: 3px solid var(--blue);
+  font-family: var(--Font2);
+  
+  }
