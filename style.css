@@ -435,13 +435,38 @@ border: 1px solid var(--orange) ;
 
 /*properties*/
 .properties1{
-  background-color: white;
-  
+  background-color: hsl(0, 0%, 93%);
   }
   
   
   .properties-heading1{
   text-align: center;
+  }
+
+  .card {
+    margin-bottom: 25px;
+    background-color: white;
+  } 
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  .properties_cards1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 20px;
+  }
+  .properties_cards2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 20px;
+  }
+
+  .card ion-icon {
+    padding-top: 5px;
+    margin-bottom: 0px;
   }
 
 /*News and blogs*/
@@ -515,11 +540,16 @@ color: var(--black);
 
 .blog-card{
 background-color: hsl(0, 0%, 93%);
+height: 500px;
+width: 350px;
 }
 
 .blog-card:hover{
 border-bottom: 3px solid black;
 transition: 0.14s ease-in-out;
+transform: translateY(-10px);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+cursor: pointer;
 }
 
 /*Contact Us*/
