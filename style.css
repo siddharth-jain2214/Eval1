@@ -347,7 +347,81 @@ border: 1px solid var(--orange) ;
 
 }
 
+/*service*/
 
+.service{
+  background-color: hsl(0, 0%, 93%);
+  padding: 100px;
+  }
+  
+  
+  .service-heading{
+  text-align: center;
+  }
+  
+  .service-list{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  
+  }
+  
+  .service-card{
+  position: relative;
+  background: var(--white);
+  text-align: center;
+  padding: 40px 30px;
+  }
+  
+  .service-card:hover{
+  border-bottom: 3px solid black;
+  transition: 0.14s ease-in-out;
+  }
+  
+  .card-icon{
+  width: max-content;
+  margin-inline: auto;
+  }
+  
+  .card-title{
+  margin-bottom: 20px;
+  }
+  
+  .card-title a{
+  text-decoration: none;
+  color:black;
+  font-family: var(--Font1);
+  font-size: 25px;
+  font-weight:bolder;
+  
+  }
+  
+  .card-title a:hover{
+  color: var(--orange);
+  }
+  
+  .card-text{
+  color: var(--cadet);
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  text-align: justify;
+  }
+  
+  .card-link{
+  color: red;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  }
+  
+  .card-link:hover{
+  color:black;
+  }
 
 
 
