@@ -433,4 +433,91 @@ border: 1px solid var(--orange) ;
 
 
 
+/*properties*/
+.properties1{
+  background-color: white;
+  
+  }
+  
+  
+  .properties-heading1{
+  text-align: center;
+  }
 
+/*News and blogs*/
+
+.blog{
+background-color: white;
+padding: 100px;
+}
+
+.news-heading{
+text-align: center;
+}
+
+.blog-list{
+display: flex;
+justify-content: center;
+gap: 50px;
+margin-top: 50px;
+
+}
+
+.section-title{
+margin-top: 20px;
+}
+
+/*.card-banner {
+overflow: hidden;
+
+background-size: cover;
+}*/
+
+.blog-content{
+padding: 30px;
+}
+.blog-content a{
+text-decoration: none;
+}
+
+.card-meta-list{
+display: flex;
+margin-bottom: 10px;
+}
+
+.card-meta-list span{
+color: var(--cadet);
+}
+.blog-title a{
+color: black;
+font-family: var(--Font1);
+font-size: 22px;
+font-weight:bolder;
+
+}
+
+.blog-content-bottom{
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+border-top: 1px solid grey;
+padding-top: 20px;
+}
+
+.blog-content-bottom a{
+color: var(--orange);
+}
+
+.blog-content-bottom a:hover{
+color: var(--black);
+}
+
+
+.blog-card{
+background-color: hsl(0, 0%, 93%);
+}
+
+.blog-card:hover{
+border-bottom: 3px solid black;
+transition: 0.14s ease-in-out;
+}
