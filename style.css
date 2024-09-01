@@ -109,12 +109,6 @@ align-items: center;
 border-bottom: 1px solid black;
 }
 
-header {
-position: sticky;
-top: 0px;
-z-index: 1000;
-}
-
 .header-rest ul, .header-rest li,.header-rest a {
 display: flex;
 color: var(--white);
@@ -210,12 +204,14 @@ border: none;
 color: white;
 font-size: 18px;
 font-family: var(--Font1);
+border-radius: 20px 20px 20px 20px;
 
 }
 
 .btn:hover{
 background-color: black;
 border: 1px solid var(--orange);
+cursor: pointer;
 
 }
 
@@ -256,12 +252,7 @@ margin-bottom: 100px;
 background-color: var(--orange);
 padding: 5px 20px 5px 20px;
 margin-bottom: 20px;
-border-top-left-radius: 20%;
-border-bottom-left-radius: 20%;
-border-top-right-radius: 20%;
-border-bottom-right-radius: 20%;
-
-
+border-radius: 25px 25px 25px 25px;
 }
 
 .section-title {
@@ -368,15 +359,17 @@ margin-top: 50px;
 }
 
 .service-card{
-position: relative;
 background: var(--white);
 text-align: center;
 padding: 40px 30px;
+border-radius: 10px;
 }
 
 .service-card:hover{
-border-bottom: 3px solid black;
-transition: 0.14s ease-in-out;
+border: 3px solid black;
+transform: translateY(-15px);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+cursor: pointer;
 }
 
 .card-icon{
@@ -436,17 +429,48 @@ color:black;
 /*properties*/
 .properties1{
   background-color: white;
+  padding-block: 100px;
   
   }
-  
-  
-  .properties-heading1{
+.properties-heading1{
   text-align: center;
   }
 
+  .card-body{
+    margin-top: 10px;
+    margin-left: 20px;
+  
+  }
+
+  .popular__price{
+    font-size: 24px;
+    color: #6C7493;
+    
+  }
+
+  .popular__price span{
+    color: var(--orange);
+  }
+
+  .popular__title{
+    color: #1F2F70;
+    font-size: 20px;
+  }
+
+  .card-list{
+    margin-top: 20px;
+  }
+
+  .popular__description{
+    margin-top: 20px;
+  }
+
+  .list-group-item{
+    font-weight: bold;
+  }
   .card {
-    margin-bottom: 25px;
-    background-color: white;
+    margin-bottom: 50px;
+    background-color: hsl(0, 0%, 93%);
   } 
 
   .card:hover {
@@ -465,15 +489,15 @@ color:black;
     margin-right: 20px;
   }
 
-  .card ion-icon {
+  /*.card ion-icon {
     padding-top: 5px;
     margin-bottom: 0px;
-  }
+  }*/
 
 /*News and blogs*/
 
 .blog{
-background-color: white;
+background-color: hsl(0, 0%, 93%);
 padding: 100px;
 }
 
@@ -540,13 +564,13 @@ color: var(--black);
 
 
 .blog-card{
-background-color: hsl(0, 0%, 93%);
+background-color: white;
 height: 500px;
 width: 350px;
 }
 
 .blog-card:hover{
-border-bottom: 3px solid black;
+border: 3px solid black;
 transition: 0.14s ease-in-out;
 transform: translateY(-10px);
 box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -556,7 +580,7 @@ cursor: pointer;
 /*Contact Us*/
 
 .contact{
-background-color: hsl(0, 0%, 93%);
+background-color: white;
 padding: 100px;
 }
 
@@ -575,6 +599,10 @@ justify-content: space-around;
 
 .contact-details p{
 margin-bottom: 20px;
+}
+
+.contact-details p i{
+  color: var(--orange);
 }
 .form{
 margin-left: 20px;
@@ -605,7 +633,7 @@ font-family: var(--Font2);
 
 /*explore*/
   .cta{
-    background-color: white;
+    background-color: hsl(0, 0%, 93%);
   padding-top: 100px;
   display: flex;
     align-items: center;
