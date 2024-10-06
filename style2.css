@@ -111,6 +111,15 @@ li {
   margin-right: 300px;
 }
 
+.toast-container {
+  position: fixed;
+  top: 20px; 
+  right: 20px; 
+  z-index: 1100;
+  pointer-events: none; 
+}
+
+
 /* Main navbar starts */
 .header-rest111 {
   height: 100px;
@@ -174,6 +183,29 @@ li {
   z-index: -1;
 }
 
+.btn{
+  width: 200px;
+  height: 50px;
+  background-color: var(--orange);
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-family: var(--Font1);
+  border-radius: 20px 20px 20px 20px;
+  margin-left: 155px;
+  margin-top: 5px;
+  font-weight: 900;
+  
+  }
+  
+  .btn:hover{
+  background-color: black;
+  border: 1px solid var(--orange);
+  cursor: pointer;
+  color: white;
+  
+  }
+
 .faqs111 {
   min-height: 380px;
 }
@@ -193,7 +225,7 @@ li {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 1);
-  opacity: 0.1;
+  opacity: 0.4;
   z-index: 0;
   border-radius: 5px;
 }
