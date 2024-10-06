@@ -30,7 +30,7 @@ var fullName = document.createElement("span");
 fullName.innerText = "Full Name";
 
 form.appendChild(fullName);
-fullName.style.fontWeight = "900";
+fullName.style.fontWeight = "600";
 fullName.style.color = "white";
 fullName.style.minWidth = "40px";
 fullName.style.paddingTop = "100px";
@@ -47,13 +47,14 @@ input1.style.height = "20px";
 input1.style.backgroundColor = "white";
 
 form.style.paddingTop = "20px";
+
 // form.style.paddingLeft = "50px";
 
 var tag1 = document.createElement("p");
 tag1.innerText = "First Name";
 tag1.style.color = "white";
 form.appendChild(tag1);
-tag1.style.fontWeight = "900";
+tag1.style.fontWeight = "600";
 tag1.style.paddingLeft = "184px";
 tag1.style.paddingTop = "5px";
 
@@ -71,22 +72,24 @@ var tag2 = document.createElement("p");
 tag2.innerText = "Last Name";
 tag2.style.color = "white";
 form.appendChild(tag2);
-tag2.style.fontWeight = "900";
+tag2.style.fontWeight = "600";
 tag2.style.paddingLeft = "184px";
 tag2.style.paddingTop = "5px";
 
 var space2 = document.createElement("div");
-space2.style.minHeight = "40px";
+space2.style.minHeight = "10px";
 form.appendChild(space2);
 
 var br = document.createElement("hr");
 form.appendChild(br);
+br.style.color = "white";
+
 
 var sendYour = document.createElement("div");
 sendYour.innerText = "Send Your Message";
 form.appendChild(sendYour);
 sendYour.style.color = "white";
-sendYour.style.fontWeight = "900";
+sendYour.style.fontWeight = "6  00";
 sendYour.style.fontSize = "20px";
 sendYour.style.paddingLeft = "175px";
 
@@ -115,8 +118,3 @@ button.style.color = "white";
 button.style.backgroundColor = "black";
 button.style.opacity = "0.7";
 button.style.fontWeight = "600";
-
-
-
-
-

@@ -58,7 +58,7 @@ body {
   background: var(--white);
 }
 
-.container {
+.containerWithItems {
   display: flex;
   justify-content: space-between;
   background-color: var(--blue);
@@ -66,36 +66,40 @@ body {
   align-items: center;
 }
 
-.container a {
+.containerWithItems a {
   color: var(--white);
   text-decoration: none;
   font-weight: 900;
 }
 
-.container a:hover {
+.containerWithItems a:hover {
   color: var(--orange);
 }
 
+.header-info-top111 {
+  position: relative;
+  top: 15px;
+}
 ion-icon {
   color: var(--orange);
 }
 
-.header-top-heading {
+.header-top-heading111 {
   display: flex;
   margin-right: 200px;
   color: var(--white);
 }
 
-.header-top-link {
+.header-top-link111 {
   display: flex;
   padding-left: 100px;
 }
 
-.header-top-list {
+.header-top-list111 {
   display: flex;
 }
 
-.header-top-social-list {
+.header-top-social-list111 {
   display: flex;
 }
 
@@ -103,12 +107,12 @@ li {
   list-style-type: none;
 }
 
-.wrapper {
+.wrapper111 {
   margin-right: 300px;
 }
 
 /* Main navbar starts */
-.header-rest {
+.header-rest111 {
   height: 100px;
   background-color: var(--black);
   width: 100%;
@@ -118,21 +122,22 @@ li {
   border-bottom: 1px solid black;
 }
 
-.header-rest ul,
-.header-rest li,
-.header-rest a {
+.header-rest111 ul,
+.header-rest111 li,
+.header-rest111 a {
   display: flex;
   color: var(--white);
   text-decoration: none;
   padding-left: 20px;
   font-weight: 900;
+  padding-top: 5px;
 }
 
-.header-rest a:hover {
+.header-rest111 a:hover {
   color: var(--orange);
 }
 
-.header_logo_cap {
+.header_logo_cap111 {
   font-size: 25px;
   color: white;
   font-weight: 900;
@@ -140,7 +145,7 @@ li {
   top: -30px;
 }
 
-.header_btn {
+.header_btn111 {
   width: 70px;
   height: 30px;
   border-radius: 4px;
@@ -154,13 +159,13 @@ li {
   transition-delay: 0.1s;
 }
 
-.header_btn:hover {
+.header_btn111:hover {
   background-color: var(--white);
   color: var(--orange);
   cursor: pointer;
 }
 
-.hero {
+.hero111 {
   min-height: 720px;
   background-image: url(images/wp3982615.jpg);
   width: 100%;
@@ -169,14 +174,15 @@ li {
   z-index: -1;
 }
 
-.faqs {
-  min-height: 500px;
+.faqs111 {
+  min-height: 380px;
 }
 
 .enquiryFormContainer {
   position: relative;
   width: 550px;
-  margin-left: 470px;
+  margin-left: 490px;
+    height: 450px;
 }
 
 .enquiryFormContainer::before {
@@ -189,6 +195,7 @@ li {
   background-color: rgba(0, 0, 0, 1);
   opacity: 0.1;
   z-index: 0;
+  border-radius: 5px;
 }
 
 .enquiryForm {
@@ -196,10 +203,29 @@ li {
   z-index: 1;
 }
 
+.faqs111_heading {
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 30px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: var(--black);
+  opacity: 0.8;
+  color: var(--white);
+}
+
+.accordion-item {
+  background-color: var(--alice-blue);
+}
+
+.accordion-button {
+  background-color: var(--alice-blue);
+}
 
 
-
-.footer-top {
+.footer-top111 {
   height: 440px;
   background-color: var(--blue);
   padding-top: 80px;
@@ -207,79 +233,79 @@ li {
   color: white;
 }
 
-.footer-top a {
+.footer-top111 a {
   text-decoration: none;
   color: white;
 }
 
-.footer-container {
+.footer-container111 {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
 }
 
-.social-list {
+.social-list111 {
   display: flex;
 
 }
 
-.social-list li {
+.social-list111 li {
   margin-right: 20px;
 }
 
-.footer-link-box {
+.footer-link-box111 {
   display: flex;
   justify-content: space-evenly;
 }
 
-.footer-list {
+.footer-list111 {
   margin-right: 150px;
 }
 
-.footer-logo {
+.footer-logo111 {
   display: flex;
 
 }
 
-.footer-logo-cap {
+.footer-logo-cap111 {
   font-size: 25px;
   color: white;
   font-weight: 900;
   margin-top: 20px;
 }
 
-.footer-text {
+.footer-text111 {
   margin-bottom: 20px;
   text-align: justify;
 }
 
-.contact-list li {
+.contact-list111 li {
   margin-bottom: 15px;
 }
 
-.social-list {
+.social-list111 {
   margin-top: 30px;
 }
 
-.footer-link-box {
+.footer-link-box111 {
   margin-top: 10px;
 }
 
-.footer-list-title {
+.footer-list-title111 {
   font-size: 22px;
   font-family: var(--Font1);
   font-weight: 800;
 }
 
-.footer-list li {
+.footer-list111 li {
   padding: 10px 0px;
 }
 
-.footer-link:hover {
+.footer-link111:hover {
   color: var(--orange);
 }
 
-.footer-bottom {
+.footer-bottom111 {
   height: 70px;
   background-color: hsl(229, 17%, 19%);
   color: white;
