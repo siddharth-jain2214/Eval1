@@ -11,6 +11,7 @@ var body = document.querySelector('body');
 var hero = document.getElementById("Hero");
 
 var form = document.createElement("form");
+form.action='./nextpage';
 
 form.classList.add('enquiryForm');
 
@@ -36,6 +37,7 @@ fullName.style.minWidth = "40px";
 fullName.style.paddingTop = "100px";
 fullName.style.fontSize = "20px";
 fullName.style.marginLeft = "50px";
+fullName.style.fontWeight='700';
 
 var input1 = document.createElement("input");
 form.appendChild(input1);
@@ -43,7 +45,7 @@ input1.style.border = "none";
 form.style.minHeight = "400px";
 input1.style.width = "60%";
 input1.style.marginLeft = "40px";
-input1.style.height = "20px";
+input1.style.height = "35px";
 input1.style.backgroundColor = "white";
 
 form.style.paddingTop = "20px";
@@ -63,7 +65,7 @@ form.appendChild(input2);
 input2.style.border = "none";
 input2.style.width = "60%";
 input2.style.marginLeft = "40px";
-input2.style.height = "20px";
+input2.style.height = "35px";
 input2.style.backgroundColor = "white";
 input2.style.marginLeft = "184px";
 input2.style.marginTop = "20px";
@@ -86,10 +88,10 @@ br.style.color = "white";
 
 
 var sendYour = document.createElement("div");
-sendYour.innerText = "Send Your Message";
+sendYour.innerText = "Send Your Enquiry";
 form.appendChild(sendYour);
 sendYour.style.color = "white";
-sendYour.style.fontWeight = "6  00";
+sendYour.style.fontWeight = "700";
 sendYour.style.fontSize = "20px";
 sendYour.style.paddingLeft = "175px";
 
@@ -100,21 +102,19 @@ input3.style.marginTop = "10px";
 input3.style.width = "80%";
 input3.style.marginLeft = "10%";
 input3.style.border = "none";
-input3.style.borderRadius = "5px";
-input2.style.borderRadius = "3px";
-input1.style.borderRadius = "3px";
+input3.style.borderRadius = "10px";
+input2.style.borderRadius = "10px";
+input1.style.borderRadius = "10px";
 
 var button = document.createElement("button");
 button.innerText = "Submit";
 form.appendChild(button);
-button.style.display = "block";
-button.style.marginLeft = "210px";
-button.style.marginTop = "15px";
-button.style.width = "100px";
-button.style.height = "25px";
-button.style.border = "none";
-button.style.borderRadius = "5px";
-button.style.color = "white";
-button.style.backgroundColor = "black";
-button.style.opacity = "0.7";
-button.style.fontWeight = "600";
+button.classList.add('btn');
+button.onclick=function(e)
+{
+    e.preventDefault();
+    var toastElement = document.getElementById('formToast');
+    var toast = new bootstrap.Toast(toastElement);
+    toast.show();
+    form.reset();
+}
