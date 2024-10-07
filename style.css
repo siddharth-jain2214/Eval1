@@ -76,6 +76,7 @@ color: var(--orange);
 display: flex;
 margin-right: 200px;
   color: var(--white);
+  font-weight: 900;
 }
 .header-top-link {
 display: flex;
