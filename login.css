@@ -1,10 +1,29 @@
 @import url(./style.css);
 
-.container123{
-    min-height: 720px;
-  background-image: url(images/wp3982615.jpg);
-  width: 100%;
+.container_background123::before {
+  background-image: url(https://wallpaperaccess.com/full/1700233.jpg);
+  height: 1000px;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 1);
+    filter: blur(10px);
+  }
+  
+  .container123 {
+    min-height: 620px;
+    background-image: url(https://wallpaperaccess.com/full/1700233.jpg);
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    margin-left: 10%;
+    margin-top: 8%;
+    opacity: 1;
 }
