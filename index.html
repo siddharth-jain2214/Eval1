@@ -89,7 +89,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <ul>
-        <li><button class="header_btn">LOGIN</button></li>
+        <li><a href="./login.html"><button class="header_btn">LOGIN</button></a></li>
       </ul>
     </div>
   </header>
@@ -315,7 +315,7 @@
 
       <div class="properties_cards">
         <div class="properties_cards1">
-          <div class="card property-card" style="width: 400px; height: 500px;">
+          <div class="card property-card" style="width: 400px; height: 530px;">
             <img src="images/property-1.jpg" class="card-img-top" alt="property1" height="300px" width="400px">
             <div class="card-body">
               <h2 class="popular__price">
@@ -333,9 +333,10 @@
               <p class="popular__description">
                 1432 Willow Creek Road, San Diego, CA 92109
               </p>
+              <button class="btn property_btn1">View Details</button>
             </div>
           </div>
-          <div class="card property-card" style="width: 400px; height: 500px;">
+          <div class="card property-card" style="width: 400px; height: 530px;">
             <img src="images/property-2.jpg" class="card-img-top" alt="property1" height="300px" width="400px">
             <div class="card-body">
               <h2 class="popular__price">
@@ -353,9 +354,10 @@
               <p class="popular__description">
                 4597 Oak Hill Drive, Lexington, KY 40502
               </p>
+              <button class="btn property_btn1">View Details</button>
             </div>
           </div>
-          <div class="card property-card" style="width: 400px; height: 500px;">
+          <div class="card property-card" style="width: 400px; height: 530px;">
             <img src="images/property-3.jpg" class="card-img-top" alt="property1" height="300px" width="400px">
             <div class="card-body">
               <h2 class="popular__price">
@@ -373,12 +375,13 @@
               <p class="popular__description">
                 2945 Elmwood Street, Minneapolis, MN 55416
               </p>
+              <button class="btn property_btn1">View Details</button>
             </div>
           </div>
 
         </div>
         <div class="properties_cards2">
-          <div class="card property-card" style="width: 400px; height: 500px;">
+          <div class="card property-card" style="width: 400px; height: 530px;">
             <img src="images/popular1.jpg" class="card-img-top" alt="property1" height="300px" width="400px">
             <div class="card-body">
               <h2 class="popular__price">
@@ -396,9 +399,10 @@
               <p class="popular__description">
                 6520 Pinecrest Boulevard, Fort Worth, TX 76107
               </p>
+              <button class="btn property_btn1">View Details</button>
             </div>
           </div>
-          <div class="card property-card" style="width: 400px; height: 500px;">
+          <div class="card property-card" style="width: 400px; height: 530px;">
             <img src="images/popular3.jpg" class="card-img-top" alt="property1" height="300px" width="400px">
             <div class="card-body">
               <h2 class="popular__price">
@@ -416,9 +420,10 @@
               <p class="popular__description">
                 2876 Maplewood Avenue, Portland, OR 97205
               </p>
+              <button class="btn property_btn1">View Details</button>
             </div>
           </div>
-          <div class="card property-card" style="width: 400px; height: 500px;">
+          <div class="card property-card" style="width: 400px; height: 530px;">
             <img src="images/popular2.jpg" class="card-img-top" alt="property1" height="300px" width="400px">
             <div class="card-body">
               <h2 class="popular__price">
@@ -436,6 +441,7 @@
               <p class="popular__description">
                 4863 Willow Bend Road, Houston, TX 77056
               </p>
+              <button class="btn property_btn1">View Details</button>
             </div>
           </div>
 
@@ -859,7 +865,22 @@
   
   </footer>
 
-  <script src="./script.js"></script>
+  <script>
+    let buttons = document.querySelectorAll('.property_btn1');
+
+    for (let item of buttons) {
+      item.onclick = function() {
+        navigateToReactPage();
+      };
+    }
+
+    function navigateToReactPage() {
+      
+      const reactAppURL = "http://localhost:5173";  // Or your deployed React app URL
+      window.location.href = reactAppURL;
+    }
+  </script>
+  
 </body>
 
 </html>
