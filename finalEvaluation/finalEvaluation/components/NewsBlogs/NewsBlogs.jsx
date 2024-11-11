@@ -1,5 +1,7 @@
 import React from 'react'
-
+import img1 from '../../src/assets/images/blog-1.png'
+import img2 from '../../src/assets/images/blog-2.jpg'
+import img3 from '../../src/assets/images/blog-3.jpg'
 const NewsBlogs = () => {
   return (
      <section className="blog" id="blog">
@@ -13,7 +15,7 @@ const NewsBlogs = () => {
         <div className="blog-card">
           <figure className="card-banner">
             <img
-              src="images/blog-1.png"
+              src={img1}
               alt="The Most Inspiring Interior Design Of 2021"
               width="100%"
             />
@@ -54,7 +56,7 @@ const NewsBlogs = () => {
         <div className="blog-card">
           <figure className="card-banner">
             <img
-              src="images/blog-2.jpg"
+              src={img2}
               alt="Recent Commercial Real Estate Transactions"
               width="100%"
             />
@@ -95,7 +97,7 @@ const NewsBlogs = () => {
         <div className="blog-card">
           <figure className="card-banner">
             <img
-              src="images/blog-3.jpg"
+              src={img3}
               alt="Renovating a Living Room? Experts Share Their Secrets"
               width="100%"
             />

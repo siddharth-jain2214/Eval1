@@ -1,5 +1,10 @@
 import React from 'react'
-
+import img1 from '../../src/assets/images/property-1.jpg'
+import img2 from '../../src/assets/images/property-2.jpg'
+import img3 from '../../src/assets/images/property-3.jpg'
+import img4 from '../../src/assets/images/popular1.jpg'
+import img5 from '../../src/assets/images/popular2.jpg'
+import img6 from '../../src/assets/images/popular3.jpg'
 const Properties = () => {
   return (
     <section className="properties1" id="properties1">
@@ -12,7 +17,7 @@ const Properties = () => {
       <div className="properties_cards1">
         <div className="card property-card" style={{ width: 400, height: 530 }}>
           <img
-            src="images/property-1.jpg"
+            src={img1}
             className="card-img-top"
             alt="property1"
             height="300px"
@@ -39,7 +44,7 @@ const Properties = () => {
         </div>
         <div className="card property-card" style={{ width: 400, height: 530 }}>
           <img
-            src="images/property-2.jpg"
+            src={img2}
             className="card-img-top"
             alt="property2"
             height="300px"
@@ -66,7 +71,7 @@ const Properties = () => {
         </div>
         <div className="card property-card" style={{ width: 400, height: 530 }}>
           <img
-            src="images/property-3.jpg"
+            src={img3}
             className="card-img-top"
             alt="property3"
             height="300px"
@@ -95,7 +100,7 @@ const Properties = () => {
       <div className="properties_cards2">
         <div className="card property-card" style={{ width: 400, height: 530 }}>
           <img
-            src="images/popular1.jpg"
+            src={img4}
             className="card-img-top"
             alt="property4"
             height="300px"
@@ -122,7 +127,7 @@ const Properties = () => {
         </div>
         <div className="card property-card" style={{ width: 400, height: 530 }}>
           <img
-            src="images/popular3.jpg"
+            src={img5}
             className="card-img-top"
             alt="property5"
             height="300px"
@@ -149,7 +154,7 @@ const Properties = () => {
         </div>
         <div className="card property-card" style={{ width: 400, height: 530 }}>
           <img
-            src="images/popular2.jpg"
+            src={img6}
             className="card-img-top"
             alt="property6"
             height="300px"

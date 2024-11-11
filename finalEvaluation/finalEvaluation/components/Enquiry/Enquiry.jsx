@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import img2 from '../../src/assets/images/home.jpg'
 
 const Hero = () => {
   return (
@@ -17,7 +18,13 @@ const Hero = () => {
           <a href="./enquiry.html"><button className="btn">Make An Enquiry</button></a>
         </div>
         <figure className="hero-banner">
-          {/* <img src="images/home.jpg" alt="Hero">  </img> */}
+          <img src={img2} alt="Hero" style={{
+          width: 472,
+          height: 634,
+          borderRadius: "236px 236px 12px 12px",
+          bottom: "-2.5rem",
+          border: "5px solid black"
+        }}/>   
         </figure>
       </div>
     </section>

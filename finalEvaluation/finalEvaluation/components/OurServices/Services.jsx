@@ -1,5 +1,7 @@
 import React from 'react';
-
+import img1 from '../../src/assets/images/service-1.png'
+import img2 from '../../src/assets/images/service-2.png'
+import img3 from '../../src/assets/images/service-3.png'
 const Services = () => {
   return (
     <section className="service" id="service">
@@ -14,7 +16,7 @@ const Services = () => {
       <li>
         <div className="service-card">
           <div className="card-icon">
-            <img src="images/service-1.png" alt="Service icon" />
+            <img src={img1} alt="Service icon" />
           </div>
           <h3 className="h3 card-title">
             <a href="#">Buy a home</a>
@@ -33,7 +35,7 @@ const Services = () => {
       <li>
         <div className="service-card">
           <div className="card-icon">
-            <img src="images/service-2.png" alt="Service icon" />
+            <img src={img2} alt="Service icon" />
           </div>
           <h3 className="h3 card-title">
             <a href="#">Rent a home</a>
@@ -52,7 +54,7 @@ const Services = () => {
       <li>
         <div className="service-card">
           <div className="card-icon">
-            <img src="images/service-3.png" alt="Service icon" />
+            <img src={img3} alt="Service icon" />
           </div>
           <h3 className="h3 card-title">
             <a href="#">Sell a home</a>
