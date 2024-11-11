@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN/SIGNUP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./login.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <header class="header111" data-header>
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top111">
+      <div class="containerWithItems">
+        <div class="header-top-heading111">
+          <ul class="header-top-list111">
+            <li>
+              <a href="mailto:info@homeverse.com" class="header-top-link111">
+                <ion-icon name="mail-outline"
+                  style="margin-right: -13%; position: relative; width: 100px; margin-top: 1%; top: 15px;"></ion-icon>
+
+                <span class="header-info-top111">info@propertypulse.com</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-top-link111">
+                <ion-icon name="location-outline" class="header-info-top111"
+                  style="position: relative; top: 20px"></ion-icon>
+                <address class="header-info-top111">15/A NYC,New York,USA</address>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="wrapper111">
+          <ul class="header-top-social-list111">
+            <li>
+              <a href="https://www.facebook.com/" target="_blank" class="header-top-social-link111"
+                style="margin-right: 15px; position: relative; top: 10px;">
+                <ion-icon name="logo-facebook" style="color: white;"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://x.com/" target="_blank" class="header-top-social-link111"
+                style="margin-right: 15px; position: relative; top: 10px;">
+                <ion-icon name="logo-twitter" style="color: white;"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/" target="_blank" class="header-top-social-link111"
+                style="margin-right: 15px; position: relative; top: 10px;">
+                <ion-icon name="logo-instagram" style="color: white;"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://in.pinterest.com/" target="_blank" class="header-top-social-link"
+                style="margin-right: 15px; position: relative; top: 10px;">
+                <ion-icon name="logo-pinterest" style="color: white;"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header-rest111">
+      <div class="header_logo111">
+        <span><img src="images/service-1.png" alt="logo" width="100px"></span>
+        <span class="header_logo_cap111" style="position: relative; top: 3px;">PropertyPulse</span>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#properties1">Property</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul>
+        <li><button class="header_btn111">LOGIN</button></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container_background123">
+
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="./nextpage" class="form3456">
+          <h1>Create Account</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your email for registration</span>
+          <input type="text" placeholder="Name" required id="input10" />
+          <input type="email" placeholder="Email" required id="input11"/>
+          <input type="password" placeholder="Password" required id="input12"/>
+          <button>Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="./nextpage2" class="form7890">
+          <h1>Sign in</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your account</span>
+          <input type="email" placeholder="Email"  id="input123" required/>
+          <input type="password" placeholder="Password" id="input345" required/>
+          <a href="#">Forgot your password?</a>
+          <button>Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>To keep connected with us please login with your personal info</p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer111">
+
+    <div class="footer-top111">
+      <div class="footer-container111">
+
+        <div class="footer-brand111">
+
+          <div class="footer-logo111">
+            <span><img src="images/service-1.png" alt="logo" width="100px"></span>
+            <span class="footer-logo-cap111">PropertyPulse</span>
+          </div>
+
+          <span class="footer-text111">
+            Carefully selected variety of properties that suit you,<br> forgetting all the difficulties of finding a
+            residence.<br><br>
+          </span>
+
+          <ul class="contact-list111">
+
+            <li>
+              <a class="contact-link111">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <span>15/A NYC,New York,USA</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="contact-link111">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <span>(123) 456-7890</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="contact-link111">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <span>info@propertypulse.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list111">
+
+            <li>
+              <a href="https://www.facebook.com/" class="social-link111">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.x.com/" class="social-link111">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/" class="social-link111">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/" class="social-link111">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box111">
+
+          <ul class="footer-list111">
+
+            <li>
+              <p class="footer-list-title111">Company</p>
+            </li>
+
+            <li>
+              <a href="./index.html#about" class="footer-link111">About</a>
+            </li>
+
+            <li>
+              <a href="./index.html#blog" class="footer-link111">Blog</a>
+            </li>
+
+            <li>
+              <a href="./index.html#service" class="footer-link111">All Products</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link111">Locations Map</a>
+            </li>
+
+            <li>
+              <a href="#accordionExample" class="footer-link111">FAQ</a>
+            </li>
+
+            <li>
+              <a href="./index.html#contact" class="footer-link111">Contact us</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list111">
+
+            <li>
+              <p class="footer-list-title111">Services</p>
+            </li>
+
+            <li>
+              <a class="footer-link111">Order tracking</a>
+            </li>
+
+            <li>
+              <a class="footer-link111">Wish List</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link111">Login</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link111">My account</a>
+            </li>
+
+            <li>
+              <a class="footer-link111">Terms & Conditions</a>
+            </li>
+
+            <li>
+              <a class="footer-link111">Promotional Offers</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list111">
+
+            <li>
+              <p class="footer-list-title111">Customer Care</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link111">Login</a>
+            </li>
+
+            <li>
+              <a class="footer-link111">My account</a>
+            </li>
+
+            <li>
+              <a class="footer-link111">Wish List</a>
+            </li>
+
+            <li>
+              <a class="footer-link111">Order tracking</a>
+            </li>
+
+            <li>
+              <a href="#accordionExample" class="footer-link111">FAQ</a>
+            </li>
+
+            <li>
+              <a href="index.html#contact" class="footer-link111">Contact us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom111">
+      <div class="bottom-container111">
+
+        <p class="copyright111">
+          &copy; 2024&nbsp;PropertyPulse. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="./login.js"></script>
+</body>
+
+</html>

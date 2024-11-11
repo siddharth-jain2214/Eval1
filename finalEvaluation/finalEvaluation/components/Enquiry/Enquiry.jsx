@@ -2,7 +2,10 @@ import React from 'react';
 import './Hero.css';
 import img2 from '../../src/assets/images/home.jpg'
 
-const Hero = () => {
+const Enquiry = () => {
+  const enq_page=()=>{
+    window.location.href="./public/enquiry.html";
+  }
   return (
     <section className="hero" id="home">
       <div className="hero-container">
@@ -15,7 +18,7 @@ const Hero = () => {
           <p className="hero-text">
             Carefully selected variety of properties that suit you,<br /> forgetting all the difficulties of finding a residence.
           </p>
-          <a href="./enquiry.html"><button className="btn">Make An Enquiry</button></a>
+          <button onClick={enq_page} className="btn">Make An Enquiry</button>
         </div>
         <figure className="hero-banner">
           <img src={img2} alt="Hero" style={{
@@ -31,4 +34,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Enquiry;

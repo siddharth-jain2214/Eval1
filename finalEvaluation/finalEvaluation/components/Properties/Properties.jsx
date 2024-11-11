@@ -5,6 +5,7 @@ import img3 from '../../src/assets/images/property-3.jpg';
 import img4 from '../../src/assets/images/popular1.jpg';
 import img5 from '../../src/assets/images/popular2.jpg';
 import img6 from '../../src/assets/images/popular3.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const Properties = () => {
   const [properties] = useState([
@@ -16,9 +17,10 @@ const Properties = () => {
     { price: "$67,521", prop_name: "Horizon View Villa", address: "4863 Willow Bend Road, Houston, TX 77056", img: img6 }
   ]);
 
-  const navigateToReactPage = () => {
-    const reactAppURL = "http://localhost:5173"; // Or your deployed React app URL
-    window.location.href = reactAppURL;
+  const navigate = useNavigate();
+
+  const goToNewPage = () => {
+    navigate('/new-page'); // Navigates to NewPage route
   };
 
   const handleSubmit = (e) => {
@@ -55,7 +57,7 @@ const Properties = () => {
                   </li>
                 </ul>
                 <p className="popular__description">{property.address}</p>
-                <button className="btn property_btn1" onClick={navigateToReactPage}>
+                <button className="btn property_btn1" onClick={goToNewPage}>
                   View Details
                 </button>
               </div>

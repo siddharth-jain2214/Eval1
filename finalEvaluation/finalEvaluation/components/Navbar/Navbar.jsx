@@ -1,6 +1,9 @@
 import React from 'react';
 import './Header.css'; // Import the CSS for the header
 const Header = () => {
+  const login_page=()=>{
+    window.location.href="./public/login.html";
+  }
   return (
     <header className="header" data-header>
       <div className="overlay" data-overlay></div>
@@ -64,7 +67,7 @@ const Header = () => {
           <li><a href="#contact">Contact</a></li>
         </ul>
         <ul>
-          <li><a href="./login.html"><button className="header_btn">LOGIN</button></a></li>
+          <li><button onClick={login_page} className="header_btn">LOGIN</button></li>
         </ul>
       </div>
     </header>
