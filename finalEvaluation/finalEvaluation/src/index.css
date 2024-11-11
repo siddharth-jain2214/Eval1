@@ -804,6 +804,107 @@ background-size: cover;
   justify-content: center;
 }
 
+/* Main section */
+.properties1 {
+  background-color: white;
+  padding-block: 100px;
+}
+
+.properties-container1 {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Section heading */
+.properties-heading1 {
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #6C7493;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #1F2F70;
+  margin-top: 10px;
+}
+
+/* Card container styling */
+.properties_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 380px;
+  height: 530px;
+  margin-bottom: 50px;
+  background-color: hsl(0, 0%, 93%);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Card body styling */
+.card-body {
+  padding: 20px;
+}
+
+.popular__price {
+  font-size: 24px;
+  color: #6C7493;
+}
+
+.popular__price span {
+  color: var(--orange);
+}
+
+.popular__title {
+  color: #1F2F70;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.card-list {
+  margin-top: 20px;
+}
+
+.popular__description {
+  margin-top: 20px;
+}
+
+.list-group-item {
+  font-weight: bold;
+}
+
+/* Button styling */
+.property_btn1 {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #1F2F70;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.property_btn1:hover {
+  background-color: #6C7493;
+}
+
+.card {
+  margin-right: 10px;
+}
 /* Media Query */
 
 @media (min-width:1000px) and (max-width:1210px) {
