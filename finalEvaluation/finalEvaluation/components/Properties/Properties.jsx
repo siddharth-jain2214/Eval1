@@ -20,7 +20,7 @@ const Properties = () => {
   const navigate = useNavigate();
 
   const goToNewPage = () => {
-    navigate('/new-page'); // Navigates to NewPage route
+    navigate('/new-page'); 
   };
 
   const handleSubmit = (e) => {
@@ -65,12 +65,6 @@ const Properties = () => {
           ))}
         </div>
 
-        {/* <form className="form1234" onSubmit={handleSubmit}>
-          <input id="input1" type="text" placeholder="Name" required />
-          <input id="input2" type="email" placeholder="Email" required />
-          <input id="input3" type="text" placeholder="Message" required />
-          <button type="submit">Submit</button>
-        </form> */}
       </div>
     </section>
   );

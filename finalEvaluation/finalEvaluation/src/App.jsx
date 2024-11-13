@@ -9,14 +9,14 @@ import NewsBlogs from '../components/NewsBlogs/NewsBlogs';
 import ContactUs from '../components/ContactUs/ContactUs';
 import Explore from '../components/ExploreDiv/Explore';
 import Footer from '../components/Footer/Footer';
-import NewPage from '../components/NewPage'; // Import NewPage Component
+import NewPage from '../components/NewPage'; 
 
 const App = () => {
   return (
     <Router>
       <Header />
       <Routes>
-        {/* Home Page Route - Main Page with multiple components */}
+        
         <Route path="/" element={
           <>
             <Hero />
@@ -29,8 +29,6 @@ const App = () => {
             <Footer />
           </>
         } />
-
-        {/* NewPage Route - When the user navigates to '/new-page' */}
         <Route path="/new-page" element={<NewPage />} />
       </Routes>
     </Router>

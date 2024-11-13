@@ -1,23 +1,15 @@
 import React, { useState } from 'react';
 
 const ContactUs = () => {
-  // Use state to manage form inputs
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
-
-  // Handle input changes
   const handleInputChange = (event) => {
-    const { id, value } = event.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [id]: value,
-    }));
+    console.log(event.target.value);
   };
 
-  // Handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
 
