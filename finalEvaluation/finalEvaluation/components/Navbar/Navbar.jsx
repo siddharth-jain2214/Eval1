@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css'; // Import the CSS for the header
+import './Header.css'; 
 const Header = () => {
   const login_page=()=>{
     window.location.href="./public/login.html";
@@ -14,13 +14,13 @@ const Header = () => {
             <ul className="header-top-list">
               <li>
                 <a href="mailto:info@propertypulse.com" className="header-top-link">
-                  {/* <IonIcon icon={mailOutline} /> */}
+                  
                   <span>info@propertypulse.com</span>
                 </a>
               </li>
               <li>
                 <a href="#" className="header-top-link">
-                  {/* <IonIcon icon={locationOutline} /> */}
+                 
                   <address>15/A NYC, New York, USA</address>
                 </a>
               </li>
@@ -30,22 +30,22 @@ const Header = () => {
             <ul className="header-top-social-list">
               <li>
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="header-top-social-link">
-                  {/* <IonIcon icon={logoFacebook} /> */}
+        
                 </a>
               </li>
               <li>
                 <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="header-top-social-link">
-                  {/* <IonIcon icon={logoTwitter} /> */}
+                 
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="header-top-social-link">
-                  {/* <IonIcon icon={logoInstagram} /> */}
+                  
                 </a>
               </li>
               <li>
                 <a href="https://in.pinterest.com/" target="_blank" rel="noopener noreferrer" className="header-top-social-link">
-                  {/* <IonIcon icon={logoPinterest} /> */}
+                 
                 </a>
               </li>
             </ul>

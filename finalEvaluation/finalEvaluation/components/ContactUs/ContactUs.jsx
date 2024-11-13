@@ -18,8 +18,7 @@ const ContactUs = () => {
     console.log(formData.name);
     console.log(formData.email);
     console.log(formData.message);
-
-    // Reset form after submission
+    
     setFormData({
       name: '',
       email: '',
