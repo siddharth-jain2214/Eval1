@@ -130,6 +130,9 @@ form.appendChild(button);
 button.classList.add('btn');
 button.onclick = function (e) {
     e.preventDefault();
+    localStorage.setItem('Name',input1.value);
+    localStorage.setItem('Phone',input2.value);
+    localStorage.setItem('Email',input4.value);
     var toastElement = document.getElementById('formToast');
     var toast = new bootstrap.Toast(toastElement);
     toast.show();

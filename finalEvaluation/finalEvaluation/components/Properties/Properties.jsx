@@ -38,7 +38,7 @@ const Properties = () => {
         </div>
         <div className="properties_cards">
           {properties.map((property, index) => (
-            <div className="card property-card" style={{ width: 400, height: 530 }} key={index}>
+            <div className="card property-card" style={{ width: 400, height: 550 }} key={index}>
               <img
                 src={property.img}
                 className="card-img-top"

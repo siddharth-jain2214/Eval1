@@ -6,8 +6,29 @@ const ContactUs = () => {
     email: '',
     message: '',
   });
-  const handleInputChange = (event) => {
+
+  const handleNameChange = (event) => {
     console.log(event.target.value);
+    setFormData((prevData) => ({
+      ...prevData, 
+      name: event.target.value,
+    }));
+  };
+
+  const handleEmailChange = (event) => {
+    console.log(event.target.value);
+    setFormData((prevData) => ({
+      ...prevData, 
+      email: event.target.value,
+    }));
+  };
+
+  const handleMessageChange = (event) => {
+    console.log(event.target.value);
+    setFormData((prevData) => ({
+      ...prevData, 
+      message: event.target.value,
+    }));
   };
 
   const handleSubmit = (event) => {
@@ -18,7 +39,7 @@ const ContactUs = () => {
     console.log(formData.name);
     console.log(formData.email);
     console.log(formData.message);
-    
+
     setFormData({
       name: '',
       email: '',
@@ -65,7 +86,7 @@ const ContactUs = () => {
               required
               id="name"
               value={formData.name}
-              onChange={handleInputChange}
+              onChange={handleNameChange}
             />
             <input
               type="email"
@@ -73,14 +94,14 @@ const ContactUs = () => {
               required
               id="email"
               value={formData.email}
-              onChange={handleInputChange}
+              onChange={handleEmailChange}
             />
             <textarea
               placeholder="Write your message here.....*"
               required
               id="message"
               value={formData.message}
-              onChange={handleInputChange}
+              onChange={handleMessageChange}
             />
             <br />
             <br />
@@ -95,3 +116,4 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
+
