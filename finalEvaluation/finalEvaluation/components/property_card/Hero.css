@@ -1,7 +1,6 @@
 .hero{
-    background: url("https://wallpaperaccess.com/full/1700233.jpg");
-    height: 800px;
-    background-repeat: no-repeat;
+    height: 900px;
+    /* background-repeat: no-repeat; */
   background-size: cover;
   z-index: -1;
 }
